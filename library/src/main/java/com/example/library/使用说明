@@ -1,0 +1,89 @@
+使用说明
+在xml布局文件中使用（示范）：
+
+
+1.跑马灯效果使用
+<com.example.library.Utils.MarqueeTextView
+            android:layout_width="180dp"
+            android:id="@+id/paomadeng"
+            android:layout_height="wrap_content"
+            android:text=" @大致爱高清 创作的原生 - 大致爱高清"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginTop="10dp"/>
+
+
+2.仿抖音加载动画使用
+ <com.example.library.Utils.DYLoadingView
+        android:id="@+id/ld"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#161924"
+        app:color1="#FF00EEEE"
+        app:color2="#FFFF4040" />
+
+
+3.仿抖音音乐字符动画的使用
+ <com.example.douyinapp.Utils.Music1
+            android:id="@+id/m"
+            app:musicimg="@drawable/music"
+            android:layout_width="80dp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="80dp" />
+        <com.example.douyinapp.Utils.Music2
+            android:id="@+id/m2"
+            app:musicimg="@drawable/music1"
+            android:layout_width="80dp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="80dp" />
+        <com.example.douyinapp.Utils.Music3
+            android:id="@+id/m3"
+            app:musicimg="@drawable/music2"
+            android:layout_width="80dp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="80dp" />
+
+
+ 4.仿抖音点赞动画的使用（点击屏幕出现红心动画）
+ <com.example.douyinapp.Utils.LikeView
+             android:id="@+id/likeview"
+             android:layout_marginBottom="80dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+
+
+ 5.圆形加载动画的使用
+ <com.kongzue.dialog.util.view.ProgressView
+                    android:id="@+id/progress"
+                    app:borderWidth ="1.5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+
+
+ 6.视频屏幕适配加载使用
+<com.example.douyinapp.Utils.CustomVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+7.上传/下载对话框使用
+<com.example.library.Util.ProdressBarView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>

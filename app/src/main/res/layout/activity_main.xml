@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="130dp"
+            android:id="@+id/chooseFile"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择文件" />
+
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_below="@id/chooseFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lj"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文件路径：" />
+
+            <TextView
+                android:id="@+id/filePath"
+                android:gravity="center"
+                android:layout_toRightOf="@id/lj"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂未选择" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@id/top1"
+            android:id="@+id/startUpload"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="开始上传" />
+
+        <Button
+            android:layout_below="@id/startUpload"
+            android:id="@+id/startDownload"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="开始下载" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/startDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/jd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载进度：" />
+
+            <TextView
+                android:layout_toRightOf="@+id/jd"
+                android:id="@+id/downloadProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无下载" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.example.library.Utils.ProgressBarView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

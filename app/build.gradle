@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'//jitpack开源需要加上这个
+group='com.gitee.yywds'//jitpack开源需要加上这个（你的github地址或者码云地址）
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.example.myutils"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(path: ':library')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.lcw.library:imagepicker:2.2.7'//上传图片/视频框架
+    implementation 'com.squareup.okhttp3:okhttp:4.5.0'//网络框架
+    implementation 'com.github.bumptech.glide:glide:4.11.0'//Glide图片加载框架
+    implementation 'com.yanzhenjie:permission:2.0.3'//权限申请框架
+    implementation 'com.kongzue.dialog:dialog:2.4.8'//空祖对话框插件
+
+}

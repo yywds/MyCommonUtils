@@ -1,0 +1,60 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+<!--    <attr name="pv_progressMode" format="integer">-->
+<!--        <enum name="determinate" value="0x00000000" />-->
+<!--        <enum name="indeterminate" value="0x00000001" />-->
+<!--        <enum name="buffer" value="0x00000002" />-->
+<!--        <enum name="query" value="0x00000003" />-->
+<!--    </attr>-->
+
+<!--    <declare-styleable name="CircularProgressDrawable">-->
+<!--        <attr name="cpd_padding" format="reference|dimension"/>-->
+<!--        <attr name="cpd_initialAngle" format="reference|integer"/>-->
+<!--        <attr name="cpd_maxSweepAngle" format="reference|integer"/>-->
+<!--        <attr name="cpd_minSweepAngle" format="reference|integer"/>-->
+<!--        <attr name="cpd_strokeSize" format="reference|dimension"/>-->
+<!--        <attr name="cpd_strokeColor" format="reference|color"/>-->
+<!--        <attr name="cpd_strokeSecondaryColor" format="reference|color"/>-->
+<!--        <attr name="cpd_strokeColors" format="reference"/>-->
+<!--        <attr name="cpd_reverse" format="boolean"/>-->
+<!--        <attr name="cpd_rotateDuration" format="reference|integer"/>-->
+<!--        <attr name="cpd_transformDuration" format="reference|integer"/>-->
+<!--        <attr name="cpd_keepDuration" format="reference|integer"/>-->
+<!--        <attr name="cpd_transformInterpolator" format="reference"/>-->
+<!--        <attr name="cpd_inAnimDuration" format="reference|integer"/>-->
+<!--        <attr name="cpd_outAnimDuration" format="reference|integer"/>-->
+<!--        <attr name="cpd_inStepColors" format="reference"/>-->
+<!--        <attr name="cpd_inStepPercent" format="float"/>-->
+<!--        <attr name="pv_progressMode"/>-->
+<!--    </declare-styleable>-->
+
+<!--    <style name="CircularProgress">-->
+<!--        <item name="cpd_padding">7dp</item>-->
+<!--        <item name="cpd_initialAngle">0</item>-->
+<!--        <item name="cpd_maxSweepAngle">270</item>-->
+<!--        <item name="cpd_minSweepAngle">1</item>-->
+<!--        <item name="cpd_strokeSize">2dp</item>-->
+<!--        <item name="cpd_strokeColor">#fff</item>-->
+<!--        <item name="cpd_strokeSecondaryColor">@android:color/transparent</item>-->
+<!--        <item name="cpd_reverse">false</item>-->
+<!--        <item name="cpd_rotateDuration">1000</item>-->
+<!--        <item name="cpd_transformDuration">600</item>-->
+<!--        <item name="cpd_keepDuration">200</item>-->
+<!--        <item name="cpd_transformInterpolator">@android:anim/decelerate_interpolator</item>-->
+<!--        <item name="pv_progressMode">indeterminate</item>-->
+<!--        <item name="cpd_inAnimDuration">0</item>-->
+<!--        <item name="cpd_outAnimDuration">@android:integer/config_mediumAnimTime</item>-->
+<!--    </style>-->
+
+    <declare-styleable name="CircularProgress">
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+</resources>
